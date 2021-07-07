@@ -133,7 +133,7 @@ void loop() {
 		//再アドバタイジング処理
 		//delay(500); // give the bluetooth stack the chance to get things ready
 		pServer->startAdvertising(); // restart advertising
-		Serial.println("start advertising");
+		Serial.println("再アドバタイズ");
 		oldDeviceConnected = deviceConnected;
 	}
 	// connecting
@@ -141,5 +141,6 @@ void loop() {
 		// do stuff here on connecting
 		oldDeviceConnected = deviceConnected;
 	}
+
 	delay(1000);								//そんなにシビアにする必要は無いので1秒で充分
 }
